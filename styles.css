@@ -7,11 +7,31 @@ body {
 	font-family: 'Muli', sans-serif;
 }
 
+section {
+	padding: 40px;
+}
+
 h1 {
 	font-family: 'Sintony', sans-serif;
 	font-size: 55px;
 	line-height: 65px;
 	color: white;
+}
+
+h2 {
+	font-family: 'Sintony', sans-serif;
+	font-size: 30px;
+	border-bottom: 2px solid grey;
+	margin: 0;
+	width: 60%;
+	padding: 15px 0;
+}
+
+.italic-sub {
+	font-family: 'Cormorant', serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 15px 0;
 }
 
 .inner-wrapper {
@@ -22,7 +42,7 @@ h1 {
 
 .hero-section {
 	position: relative;
-	padding: 60px;
+	padding: 60px!important;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -49,6 +69,58 @@ h1 {
 	text-transform: uppercase;
 }
 
+.skills-section {
+	background: #f1f1f1;
+}
+
 .skills-section .inner-wrapper {
 	display: flex;
+	align-items: center;
+}
+
+.skills-section .left {
+	flex: 1;
+	padding: 20px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.35);
+}
+
+.skills-section .right {
+	flex: 1;
+	padding: 20px;
+}
+
+.skills-section .skill-title {
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+.skills-section .skill-subtitle {
+	font-family: 'Cormorant', serif;
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.projects-section {
+	text-align: center;
+}
+
+.project-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+footer p {
+  margin: 15px 0;
+}
+
+@media (max-width: 769px) {
+	.hero-section {
+		padding: 20px;
+	}
 }

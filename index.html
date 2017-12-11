@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Mike Constantino Portfolio</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli|Sintony:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:500i|Muli|Sintony:700" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,19 +20,35 @@
 		<div class="inner-wrapper">
 			<div class="left">
 				<h2>Skills</h2>
-				<h3 class="skill-title">ReactJS</h3>
-				<p class="skill-subtitle">Lightweight and efficient single page applications</p>
-				<h3 class="skill-title">NodeJS and MongoDB</h3>
-				<p class="skill-subtitle">Structured and RESTful API's using the latest tech</p>
-				<h3 class="skill-title">Vanilla JavaScript</h3>
-				<p class="skill-subtitle">Core principles and latest standards with ES6</p>
-				<h3 class="skill-title">HTML and CSS</h3>
-				<p class="skill-subtitle">Accessible and semantic HTML styled with the latest in CSS layout modes and properties</p>
-				<p>Arbitrary skill percentages are useless - so here's quick summary of my skills! I started out with HTML and CSS using <a href="https://teamtreehouse.com/mikeconstantino">Treehouse</a> in 2014. In 2015, I began learning Javascript and shortly got a job as a Web Developer at a small agency later. Today (after a combination of training from experience as a Front-End Dev, Thinkful Web Dev Bootcamp, and Treehouse - I specialize in ReactJS, NodeJS, and Mongo. I make mobile-first and efficient single page apps utilizing the latest development tools.</p>
+				<p class="italic-sub">Arbitrary skill charts are useless. Here's a detailed list of what I can do.</p>
+				<div class="skill">
+					<hr style="border: 3px solid #375fe6; width: 80px; margin: 0;"/>
+					<h3 class="skill-title">ReactJS</h3>
+					<p class="skill-subtitle">Lightweight and efficient single page applications</p>
+					<p>I create lightweight and efficient full-scale SPA's using React and Redux. I integrate multiple front-end technologies such as Sass, Jest and Eznyme to create clean, organized, and tested code.</p>
+				</div>
+				<div class="skill">
+					<hr style="border: 3px solid #008600; width: 80px; margin: 0;"/>
+					<h3 class="skill-title">NodeJS and MongoDB</h3>
+					<p class="skill-subtitle">Structured and RESTful API's using the latest tech</p>
+					<p>Using NodeJS and Express, I create structured API's using RESTful standards to create easy-to-intrepret endpoints that efficiently and easily communicate with MongoDB - a document-driven NoSQL database.</p>
+				</div>
+				<div class="skill">
+					<hr style="border: 3px solid #e74c3c; width: 80px; margin: 0;" />
+					<h3 class="skill-title">Vanilla JavaScript</h3>
+					<p class="skill-subtitle">Core principles and latest standards with ES6</p>
+					<p>Aside from frameworks and server-side JavaScript, I understand and use core JavaScript principles and fundamentals daily throughout my projects. I also use the ECMAScript 6 methods and syntax for an organized and future-proof code.</p>
+				</div>
+				<div class="skill">
+					<hr style="border: 3px solid #8e44ad; width: 80px; margin: 0;" />
+					<h3 class="skill-title">HTML and CSS</h3>
+					<p class="skill-subtitle">Accessible and semantic HTML styled with the latest in CSS layout modes and properties</p>
+					<p>I create accessible and semantic HTML using JSX when applicable. I use SCSS as a CSS pre-processor for more organized stylesheets, and specialize in the latest flexbox and grid layouts CSS has to offer.</p>
+				</div>
 			</div>
 			<div class="right">
 				<p class="lazy-disclaimer"><em>If you don't want to read all that, here's that arbitrary chart I was shunning.</em></p>
-				<div class="filler-chart"><img src="http://fillmurray.com/350/350"></div>
+				<div class="chart"><canvas id="skillsChart" width="500" height="500"></canvas></div>
 			</div>
 		</div>
 	</section>
@@ -63,7 +79,9 @@
 			</div>
 		</div>
 	</section>
-	<footer></footer>
+	<footer><p>Made with (╯°□°）╯︵ ┻━┻ in Orlando, FL. 🌴</p></footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 	<script src="confetti.js"></script>
 	<script src="index.js"></script>
 </body>
