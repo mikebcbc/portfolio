@@ -17,15 +17,21 @@ h1 {
 .inner-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+	z-index: 999;
 }
 
 .hero-section {
+	position: relative;
 	padding: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
 	background: #282c35;
+}
+
+.hero-section #world {
+	position: absolute;
 }
 
 .hero-section p {
