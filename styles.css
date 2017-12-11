@@ -9,6 +9,7 @@ body {
 
 section {
 	padding: 40px;
+	min-height: 600px;
 }
 
 h1 {
@@ -22,9 +23,13 @@ h2 {
 	font-family: 'Sintony', sans-serif;
 	font-size: 30px;
 	border-bottom: 2px solid grey;
-	margin: 0;
-	width: 60%;
+	margin: 0 0 20px 0;
 	padding: 15px 0;
+}
+
+.skills-section h2 {
+	width: 60%;
+	margin: 0;
 }
 
 .italic-sub {
@@ -80,6 +85,7 @@ h2 {
 
 .skills-section .left {
 	flex: 1;
+	background: white;
 	padding: 20px;
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.35);
 }
@@ -87,6 +93,7 @@ h2 {
 .skills-section .right {
 	flex: 1;
 	padding: 20px;
+	max-width: 100%;
 }
 
 .skills-section .skill-title {
@@ -101,12 +108,96 @@ h2 {
 }
 
 .projects-section {
-	text-align: center;
+	text-align: center;	
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3E78B2;
+}
+
+.projects-section .inner-wrapper {
+	width: 100%;
+}
+
+.projects-section h2 {
+	width: 50%;
+	color: white;
+	border-bottom: 2px solid white;
+	margin: 0 auto;
+}
+
+.projects-section p {
+	margin: 0 auto 90px auto;
+	color: white;
 }
 
 .project-container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.project-container .project {
+	width: 350px;
+	height: 200px;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project h2 {
+	color: white;
+	margin: 0;
+	border-bottom: 2px solid white;
+}
+
+.project {
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.project p {
+	transition: all 0.6s;
+	padding: 0px;
+	color: white;
+	opacity: 0;
+	margin: 0;
+}
+
+.project:hover {
+	box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+	transform: translate(0px, -10px) scale(1.07)
+}
+
+.project:hover p {
+	padding: 20px;
+	opacity: 1;
+}
+
+.project-1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/memo.jpg);
+}
+
+.project-2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/adopt-list.jpg);
+}
+
+.project-3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/more-news-less-bias.jpg);
+}
+
+.contact-section .inner-wrapper {
+	display: flex;
+}
+
+.contact-section .left, .contact-section .right {
+	flex: 1;
+}
+
+.contact-section form {
+	display: flex;
+	flex-direction: column;
 }
 
 footer {
@@ -121,6 +212,21 @@ footer p {
 
 @media (max-width: 769px) {
 	.hero-section {
+		text-align: center;
+		padding: 20px!important;
+	}
+	section {
 		padding: 20px;
+	}
+	.hero-section h1 {
+		font-size: 50px;
+		line-height: 55px;
+	}
+	.inner-wrapper {
+		flex-direction: column;
+		max-width: 100%;
+	}
+	.project-container {
+		flex-direction: column;
 	}
 }
