@@ -67,11 +67,24 @@ h2 {
 
 .hero-section button {
 	background: transparent;
-	color: white;
 	border: 4px solid white;
 	border-radius: 0;
-	padding: 15px 30px;
 	text-transform: uppercase;
+	outline: none;
+	transition: 0.5s;
+}
+
+.hero-section button:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-section button a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	padding: 15px 30px;
+	display: inline-block;
+	outline: none;
 }
 
 .skills-section {
@@ -155,6 +168,7 @@ h2 {
 .project {
 	transition: 0.3s;
 	cursor: pointer;
+	margin: 0 10px;
 }
 
 .project p {
@@ -218,7 +232,7 @@ h2 {
 	text-decoration: none;
   color: black;
   font-style: italic;
-  font-size: 21px;
+  font-size: 20px;
   margin-left: 35px;
 }
 
@@ -237,7 +251,7 @@ footer p {
   color: white;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 980px) {
 	.hero-section {
 		text-align: center;
 		padding: 20px!important;
@@ -255,5 +269,17 @@ footer p {
 	}
 	.project-container {
 		flex-direction: column;
+		align-items: center;
+	}
+	.project {
+		margin-bottom: 15px;
+	}
+	.contact-type {
+		margin-bottom: 20px;
+	}
+	iframe {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
 	}
 }
