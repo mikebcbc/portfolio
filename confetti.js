@@ -1,5 +1,3 @@
-// Not mine. Crediting Linmiao Xu: https://codepen.io/linrock/pen/Amdhr with some edits.
-
 (function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
